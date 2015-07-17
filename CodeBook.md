@@ -2,17 +2,11 @@ Description of data in the file tidy_data.txt
 
 ##Rows
 The first row contains variable names  
-Data set contains 10299 observations  
+Data set contains 180 observations  which are averaged values for each activity and each subject for measurement which are mean or standard deviation.
 
 ##Columns
 Subject- First column is a subject (person) number (note that every subject is listed more than once)  
-Activity- Second column is an activity, where:  
-* 1 is WALKING  
-* 2 is WALKING_UPSTAIRS  
-* 3 is WALKING_DOWNSTAIRS
-* 4 is SITTING
-* 5 is STANDING
-* 6 is LAYING
+Activity- Second column is an activity
 
 Columns 3-68 are measurement fo certain values, which are described in column names. Read names as:  
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.   
@@ -47,5 +41,6 @@ The set of variables that were estimated from these signals are:
 mean(): Mean value    
 std(): Standard deviation
 
-
+##Comment
+I have not taken values which have mean in their name (eg. gravityMean). Thus, the number of colums is 68 (which would be 89 if I had taken those variables)
 
